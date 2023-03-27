@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+   char shirt[20], pants[20];
+
+   printf("Enter your shirt color: ");
+   scanf("%s", shirt);
+
+   printf("Enter your pants color: ");
+   scanf("%s", pants);
+
+   if (strcmp(shirt, "red") == 0) {
+      if (strcmp(pants, "blue") == 0) {
+         printf("You can wear a red shirt with blue pants.\n");
+      } else if (strcmp(pants, "black") == 0) {
+         printf("You can wear a red shirt with black pants.\n");
+      } else {
+         printf("Sorry, we couldn't find a match for your outfit.\n");
+      }
+   } else if (strcmp(shirt, "blue") == 0) {
+      if (strcmp(pants, "black") == 0) {
+         printf("You can wear a blue shirt with black pants.\n");
+      } else if (strcmp(pants, "white") == 0) {
+         printf("You can wear a blue shirt with white pants.\n");
+      } else {
+         printf("Sorry, we couldn't find a match for your outfit.\n");
+      }
+   } else if (strcmp(shirt, "green") == 0) {
+      if (strcmp(pants, "brown") == 0) {
+         printf("You can wear a green shirt with brown pants.\n");
+      } else if (strcmp(pants, "khaki") == 0) {
+         printf("You can wear a green shirt with khaki pants.\n");
+      } else {
+         printf("Sorry, we couldn't find a match for your outfit.\n");
+      }
+   } else {
+      printf("Sorry, we couldn't find a match for your outfit.\n");
+   }
+
+   return 0;
+}
+
