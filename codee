@@ -1,0 +1,47 @@
+/* This code will help the user in deciding the outfits and be dressed according to the occasion.
+The user will be asked to input the current temperature and the occasion.
+Based on the input provided, the best matching clothes suggestion will be provided as an output.*/
+
+// code created by AASTHA 
+
+#include <stdio.h>
+
+int main() {
+    int temperature, occasion;
+    printf("Enter the temperature (in degrees celcius): ");
+    scanf("%d", &temperature);
+    printf("Enter the occasion (1 = casual, 2 = business casual, 3 = formal): ");
+    scanf("%d", &occasion);
+
+    if (temperature<=5) {
+        printf("It's cold outside! You should wear a coat.\n");
+    }
+      else if (temperature >=5 && temperature <=20) {
+        printf("It's mid temp outside. You may prefer wearing light woolen clothes.\n");
+    }
+    else if (temperature >=20 && temperature <=30){
+        printf("It's warm outside. You may prefer a light pre summer clothes.\n");
+    }
+     else if (temperature >=30 && temperature <=50){
+        printf("It's too much warm outside. You may prefer summer clothes and try to stay away from direct sunlight .\n");
+    }
+     else if (temperature >=50 && temperature <=60){
+        printf("You won't be able to survive .\n");
+    }
+
+    if (occasion == 1) {
+        printf("Wear jeans and a t-shirt.\n");
+    }
+    else if (occasion == 2) {
+        printf("Wear trousers and a  white shirt.\n");
+    }
+    else if (occasion == 3) {
+        printf("Wear a suit and tie.\n");
+    }
+    else {
+        printf("Invalid occasion input.\n");
+    }
+
+    return 0;
+}
+
