@@ -12,6 +12,8 @@ int main() {
     scanf("%d", &temperature);
     printf("Enter the occasion (1 = casual, 2 = business casual, 3 = formal): ");
     scanf("%d", &occasion);
+    printf("enter your color choice (0=red , 1= blue 2= yellow):");
+    sacnf("%d", &color);
 
     if (temperature<=5) {
         printf("It's cold outside! You should wear a coat.\n");
@@ -41,6 +43,19 @@ int main() {
     else {
         printf("Invalid occasion input.\n");
     }
+    if (color ==0){
+        printf("you should wear a red color \n");
+    }
+    else if (color ==1){
+        printf("you should wear a yellow color \n");
+    }
+    else if (color ==2){
+        printf("wear a blue color \n");
+    }
+    else {
+        printf("invalid color input\n");
+    }
+
 
     return 0;
 }
